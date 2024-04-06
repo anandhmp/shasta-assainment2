@@ -1,0 +1,22 @@
+<div class="row list-country">
+    <div class="col">
+        <table class="table table-hover">
+            <thead>
+              <tr>
+                <th>Country Name</th>
+                <th>Phone Code</th>
+                <th>Sort Name</th>
+              </tr>
+            </thead>
+            <tbody>
+            @for( country of countries;track country.id){
+              <tr>
+                <td>{{country.name}}</td>
+                <td>{{country.phoneCode}}</td>
+                <td>{{country.sortname}}</td>
+              </tr>
+            }
+            </tbody>
+          </table>
+    </div>
+</div>

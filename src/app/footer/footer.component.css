@@ -1,0 +1,21 @@
+.footer{
+    padding-bottom: 50px;
+    background-color: #004c6d;
+    padding-top: 40px;
+}
+.footer h4{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.footer i{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding-inline: 10px;
+}
+.footer p{
+    color: white;
+    font-size: 20px;
+}

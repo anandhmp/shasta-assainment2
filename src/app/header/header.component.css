@@ -1,0 +1,10 @@
+.navbar{
+    margin: 0;
+    background-color: #004c6d;
+}
+.navbar .navbar-brand{
+    color: white;
+}
+.navbar .navbar-nav a{
+    color: white;
+}

@@ -1,18 +1,20 @@
-.add-country{
+.add-country {
     margin: 50px;
     height: 550px;
 }
-.add-country .form-label{
+
+.add-country label {
     color: #a1a1a1;
-    font-size: 20px;
+    font-size: 17px;
 }
-.add-country .form-control{
+
+.add-country .form-control {
     width: 100%;
     height: 50px;
     border-radius: 0;
 }
-.add-country .btn{
-    background-color: #a1a1a1;
+
+.add-country .btn {
     border-radius: 0;
     width: 100%;
     height: 50px;

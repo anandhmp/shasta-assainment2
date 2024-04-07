@@ -5,6 +5,7 @@ import { AddUniversityComponent } from './add-university/add-university.componen
 import { ListUniversityComponent } from './list-university/list-university.component';
 
 export const routes: Routes = [
+    { path:'',component:AddCountryComponent},
     { path: 'add-country', component: AddCountryComponent },
     { path: 'list-country', component: ListCountryComponent },
     { path: 'add-university', component: AddUniversityComponent },

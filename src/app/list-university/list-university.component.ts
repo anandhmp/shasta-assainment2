@@ -1,5 +1,15 @@
-import { Component } from '@angular/core';
+import { Component,OnInit  } from '@angular/core';
 import {ApicallService} from '../apicall.service'
+
+interface University {
+  web_pages: string[];
+  domains: string[];
+  alpha_two_code: string;
+  state_province: string | null;
+  country: string;
+  name: string;
+  id:number;
+}
 
 
 @Component({
@@ -12,11 +22,12 @@ import {ApicallService} from '../apicall.service'
 export class ListUniversityComponent {
   constructor(private getApi: ApicallService){}
 
-  universityArray:[]=[]
-  ngOninit(){
-    this.getApi.getUniversity().subscribe((data)=>{
+  universities: University[] = [];
+
+  ngOnInit(){
+    this.getApi.getUniversity().subscribe((data: University[])=>{
       console.log(data)
-      this.universityArray=data
+      this.universities=data
     })
   }
 }

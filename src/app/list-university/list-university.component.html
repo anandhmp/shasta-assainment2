@@ -9,13 +9,14 @@
               </tr>
             </thead>
             <tbody>
-            <!-- @for (university of universityArray; track user.id) {
-              <tr>
-                <td>{{university.name}}</td>
-                <td>{{university.country}}</td>
-                <td>{{university.alpha_two_code}}</td>
-              </tr>
-            } -->
+                @for (item of universities;track item.id) {
+                    <tr>
+                      <td>{{item.name}}</td>
+                      <td>{{item.country}}</td>
+                      <td>{{item.alpha_two_code}}</td>
+                    </tr>
+                  }
+              
             </tbody>
           </table>
     </div>

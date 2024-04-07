@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component,ViewChild, inject } from '@angular/core';
 import {countries}  from '../../assets/countries.json';
+
 
 @Component({
   selector: 'app-list-country',
@@ -9,5 +10,7 @@ import {countries}  from '../../assets/countries.json';
   styleUrl: './list-country.component.css'
 })
 export class ListCountryComponent {
-  countries = countries;
+countries = countries;
+
+
 }

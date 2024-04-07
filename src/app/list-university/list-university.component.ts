@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {ApicallService} from '../apicall.service'
+
 
 @Component({
   selector: 'app-list-university',
@@ -8,5 +10,13 @@ import { Component } from '@angular/core';
   styleUrl: './list-university.component.css'
 })
 export class ListUniversityComponent {
+  constructor(private getApi: ApicallService){}
 
+  universityArray:[]=[]
+  ngOninit(){
+    this.getApi.getUniversity().subscribe((data)=>{
+      console.log(data)
+      this.universityArray=data
+    })
+  }
 }

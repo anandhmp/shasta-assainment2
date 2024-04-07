@@ -1,0 +1,22 @@
+.add-university{
+    margin: 50px;
+    height: 550px;
+}
+.add-university .form-label{
+    color: #a1a1a1;
+    font-size: 20px;
+}
+.add-university .form-control{
+    width: 100%;
+    height: 50px;
+    border-radius: 0;
+}
+.add-university  .btn{
+    background-color: #a1a1a1;
+    border-radius: 0;
+    width: 100%;
+    height: 50px;
+    color: white;
+    background-color: green;
+    margin-top: 30px;
+}

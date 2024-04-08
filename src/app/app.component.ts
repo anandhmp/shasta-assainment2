@@ -8,7 +8,6 @@ import { AddUniversityComponent } from './add-university/add-university.componen
 import { ListUniversityComponent } from './list-university/list-university.component';
 import { FooterComponent } from './footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
-import { MatPaginatorModule } from '@angular/material/paginator';
 import { CountryComponent } from './country/country.component';
 import { UniversityComponent } from './university/university.component';
 
@@ -17,7 +16,7 @@ import { UniversityComponent } from './university/university.component';
   standalone: true,
   imports: [RouterOutlet,HeaderComponent,SidebarComponent,AddCountryComponent,
             ListCountryComponent,AddUniversityComponent,ListUniversityComponent,
-            FooterComponent,HttpClientModule,MatPaginatorModule,CountryComponent,UniversityComponent],
+            FooterComponent,HttpClientModule,CountryComponent,UniversityComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

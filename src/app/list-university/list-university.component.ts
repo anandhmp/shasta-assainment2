@@ -1,5 +1,6 @@
 import { Component,OnInit  } from '@angular/core';
-import {ApicallService} from '../apicall.service'
+import {ApicallService} from '../apicall.service';
+import { MatPaginator,MatPaginatorModule,PageEvent } from '@angular/material/paginator';
 
 interface University {
   web_pages: string[];
@@ -15,7 +16,7 @@ interface University {
 @Component({
   selector: 'app-list-university',
   standalone: true,
-  imports: [],
+  imports: [MatPaginator,MatPaginatorModule],
   templateUrl: './list-university.component.html',
   styleUrl: './list-university.component.css'
 })
@@ -24,10 +25,24 @@ export class ListUniversityComponent {
 
   universities: University[] = [];
 
+  pageSize = 10;
+  pageIndex = 0;
+
   ngOnInit(){
     this.getApi.getUniversity().subscribe((data: University[])=>{
       console.log(data)
       this.universities=data
     })
   }
+
+  onPageChange(event: PageEvent) {
+    this.pageIndex = event.pageIndex;
+  }
+
+  getDisplayedUniversities(): University[] {
+    const startIndex = this.pageIndex * this.pageSize;
+    const endIndex = startIndex + this.pageSize;
+    return this.universities.slice(startIndex, endIndex);
+  }
+
 }

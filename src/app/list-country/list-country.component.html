@@ -9,7 +9,7 @@
               </tr>
             </thead>
             <tbody>
-            @for( country of countries;track country.id){
+            @for( country of getDisplayedCountries();track country.id){
               <tr>
                 <td>{{country.name}}</td>
                 <td>{{country.phoneCode}}</td>
@@ -18,5 +18,10 @@
             }
             </tbody>
           </table>
+          <mat-paginator [length]="countries.length"
+                  [pageSize]="pageSize"
+                  (page)="onPageChange($event)"
+                  aria-label="Select page">
+          </mat-paginator>
     </div>
 </div>

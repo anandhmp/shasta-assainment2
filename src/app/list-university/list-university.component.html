@@ -9,15 +9,19 @@
               </tr>
             </thead>
             <tbody>
-                @for (item of universities;track item.id) {
+                @for (item of getDisplayedUniversities();track item.id) {
                     <tr>
                       <td>{{item.name}}</td>
                       <td>{{item.country}}</td>
                       <td>{{item.alpha_two_code}}</td>
                     </tr>
                   }
-              
             </tbody>
           </table>
+          <mat-paginator [length]="universities.length"
+                  [pageSize]="pageSize"
+                  (page)="onPageChange($event)"
+                  aria-label="Select page">
+          </mat-paginator>
     </div>
 </div>

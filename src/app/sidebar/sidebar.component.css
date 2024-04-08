@@ -4,6 +4,7 @@
     background-color: rgb(239, 239, 239);
     height: 100%;
     overflow: auto;
+    min-height: 550px;
   }
   .sidebar a {
     display: block;

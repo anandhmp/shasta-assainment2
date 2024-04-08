@@ -9,15 +9,15 @@ import { ListUniversityComponent } from './list-university/list-university.compo
 import { FooterComponent } from './footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MatPaginatorModule } from '@angular/material/paginator';
-
-
+import { CountryComponent } from './country/country.component';
+import { UniversityComponent } from './university/university.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet,HeaderComponent,SidebarComponent,AddCountryComponent,
             ListCountryComponent,AddUniversityComponent,ListUniversityComponent,
-            FooterComponent,HttpClientModule,MatPaginatorModule],
+            FooterComponent,HttpClientModule,MatPaginatorModule,CountryComponent,UniversityComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

@@ -1,5 +1,11 @@
 
     <div class="col sidebar">
+    @if(isCountryRoute()){
     <a routerLink="/add-country">Add Country</a>
     <a routerLink="/list-country">List Country</a>
+    }
+    @if(isUniversityRoute()){
+        <a routerLink="/add-university">Add University</a>
+        <a routerLink="/list-university">List University</a>
+    }
     </div>

@@ -1,4 +1,9 @@
-.list-country{
-    margin: 40px;
-    height: 550px;
+.filter-block{
+    width: 100%;
+    padding-top: 10px;
+}
+.mat-elevation-z8{
+    height:550px;
+    width: 100%;
+    position: sticky;
 }

@@ -11,12 +11,13 @@ import { HttpClientModule } from '@angular/common/http';
 import { CountryComponent } from './country/country.component';
 import { UniversityComponent } from './university/university.component';
 
+
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet,HeaderComponent,SidebarComponent,AddCountryComponent,
             ListCountryComponent,AddUniversityComponent,ListUniversityComponent,
-            FooterComponent,HttpClientModule,CountryComponent,UniversityComponent],
+            FooterComponent,HttpClientModule,CountryComponent,UniversityComponent,],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
